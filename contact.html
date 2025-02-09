@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVShop | Contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!--Header and Navigation menu-->
+    <header>
+        <div class="logo">EVShop</div>
+        <button id="menu-toggle">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ev-models.html">EV Models</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Contact-->
+    <section class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Have Questions? Send a query in the form below.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text"  id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message"  name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script src="main.js"></script>
+    <footer>
+        &copy;EVShop 2025 All Rights Reserved.
+        <p>Images Sources: Unsplash</p>
+    </footer>
+</body>
+</html>

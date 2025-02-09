@@ -1,0 +1,396 @@
+/* global styles configuration*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation styling */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008080;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.current a{
+    color: blue;
+}
+.current a:hover{
+    color: #e6f2ff;
+}
+
+#hero{
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url(../Images/hyundai-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+#hero h1{
+    font-size: 4rem;
+    color: #fff;
+}
+
+.cta{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+/* Why choose EVs */
+.why-us{
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.why-us ul li{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* featured EV */
+#featured-evs{
+    text-align: center;
+    padding: 30px;
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ev-card{
+    padding: 20px;
+    background-color: #e6f2ff;
+    border-radius:5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ev-card img{
+    /*width: 100%;*/
+    width: 100%;
+    height: 250px;
+    /*height:auto*/
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/*about us styling*/
+#about{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+#about h1, #about h2{
+    color: #008080;
+}
+#about p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 20px;
+
+}
+#about ul{
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#about ul li{
+    background: #e6f2ff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+#about img{
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*EV-Models page*/
+#ev-models{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+}
+#ev-models h1{
+    text-align: center;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+ .ev-card{
+    padding: 20px;
+    background-color: #e6f2ff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.ev-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.ev-card h3{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Comparison Table */
+#comparison{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+#comparison table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+#comparison th, #comparison td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+#comparison th{
+    background-color: #008080;
+    color: #fff;
+}
+
+/*login page*/
+.login-container{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.login-container h1{
+    margin-bottom: 20px;
+    color: #008080;
+}
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+.login-container label{
+    margin: 10px 5px;
+    font-weight: bold;
+}
+.login-container input{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.login-container button{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-container button:hover{
+    background-color: #006666;
+}
+.login-container p{
+    margin-top: 10px;
+}
+.login-container a{
+    color: #008080;
+    text-decoration: none;
+}
+.login-container a:hover{
+    text-decoration: underline;
+}
+
+/*contact page*/
+.contact-container{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background:#fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 200px;
+}
+.contact-container h1{
+    margin-bottom: 20px;
+    color: #008080;
+}
+.contact-container p{
+    margin-bottom: 15px;
+}
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-container label{
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.contact-container input, .contact-container textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+ 
+.contact-container button{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.contact-container button:hover{
+    background-color: #006666;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+}
+
+/* hidding the menu button from the desktop layout*/
+#menu-toggle{
+    display: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+ 
+
+/*media query for responsiveness */
+/*Desktop layout screen*/
+@media(min-width:1024px){
+    
+    .cards-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/*mobile screen*/
+@media (max-width:480px){
+    .contact-container, .login-container{
+        width: 90%;
+        padding: 15px;
+    }
+    .contact-container, .login-container{
+        max-width: 90%;
+        width: 400px;
+    }
+    .about img{
+        width: 95%;
+    }
+} 
+/*tablet layout*/
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    #menu-toggle{
+        display: block;
+    }
+    #nav-menu{
+        display: none;
+    }
+    #nav-menu.show{
+        display: block;
+    }
+    nav ul li{
+        flex-direction: column;
+    }
+    nav ul li{
+        padding: 15px 0;
+    }
+    #hero{
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url(../Images/hyundai-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    color: #fff;
+    }
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .ev-card{
+        background-color: #e6f2ff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+    }
+    .ev-card img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .about{
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f9f9f9;
+    }
+    .about img{
+        width: 80%;
+        max-width: 600px;
+        margin-top: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
